@@ -1,3 +1,7 @@
+ <div align="center">
+  <img alt="Application image" src="https://cssh.northeastern.edu/informationethics/wp-content/uploads/sites/44/2020/07/ai@2x.png" width="400" />
+</div>
+<br>
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
@@ -16,27 +20,22 @@ Client Side of the Full Stack AI Analyser and Generator 2024 Application:
 - React 18.2 
 - REDUX
 - SASS
-- Tachyons
-- particles-bg
+- Tailwind CSS
 - react-parallax-tilt
 
 ## 🛠 Server Side Repository
 <a href="https://github.com/vargaae/image-detect-api" target="_blank"> NodeJS Application on the server side</a>
 
 ## AI Detection Image Analysis
-<div align="center">
-  <img alt="Application image" src="https://cssh.northeastern.edu/informationethics/wp-content/uploads/sites/44/2020/07/ai@2x.png" width="400" />
-</div>
-<br>
 <p align="center">
 AI detection image analysis | AI visual inspection tool
 application with Clarifai API.
 This application analyses the loaded image and makes predictions of concepts, that we can use for example for keywords. I designed and developed the React application for this AI detection tool. It's connected to the server side through the Routes - REST API and through the encrypted auth services.
 </p>
-<img alt="Application image" src="https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png?width=120&name=clarifai-740x150.png" width="150" />
- 🚀 Cloud Application Platform: deployed on Heroku (PaaS) 
-both BE+FE applications and the DB entirely in the CLOUD:
-<img alt="Application image" src="https://blackdeerdev.com/wp-content/uploads/2021/02/Heroku.png" width="250" />
+🚀<img alt="OpenAI logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ywmdBsy_LQo5vULnankQxbOiEfl_sT-CIEKCpUoizQ&s" width="150" />
+🚀<img alt="ClarifAI logo" src="https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png?width=120&name=clarifai-740x150.png" width="150" />
+🚀<img alt="Rapid API logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/RapidAPI_logo.svg/1200px-RapidAPI_logo.svg.png" width="150" />
+  
 
 
 ## 🛠 AI IMAGE DETECTION IMAGE ANALYSIS Back End: 
