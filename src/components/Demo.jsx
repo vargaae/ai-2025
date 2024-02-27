@@ -73,10 +73,10 @@ const Demo = () => {
 
         {/* Browse URL History */}
         <div className="flex flex-col gap-1 max-h-60 overflow-y-auto">
-          {allArticles.map((item, index) => (
+          {allArticles.reverse().map((item, index) => (
             <div
               key={`link-${index}`}
-              onClick={() => setAllArticles(item)}
+              onClick={() => setArticle(item)}
               className="link_card"
             >
               <div className="copy_btn">
@@ -94,9 +94,33 @@ const Demo = () => {
         </div>
       </div>
 
-      {/* 
-        !!! Will come here:
-    Display Results */}
+      {/* Summaries of the Articles */}
+      <div className="my10 max-w-full flex justify-center">
+        {isFetching ? (
+          <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
+        ) : error ? (
+          <p className="font-inter font-bold text-center text-black">
+            Well, that was not supposed to happen...
+            <br />
+            <span className="font-satoshi text-gray-700 font-normal ">
+              {error?.data?.error}
+            </span>
+          </p>
+        ) : (
+          article.summary && (
+            <div className="flex flex-col gap-3">
+              <h2 className="font-satoshi text-gray-600 font-bold text-xl">
+                Article <span className="blue_gradient"></span>
+              </h2>
+              <div className="summary_box">
+                <p className="font-inter font-medium text-sm text-gray-700">
+                  {article.summary}
+                </p>
+              </div>
+            </div>
+          )
+        )}
+      </div>
     </section>
   );
 };
