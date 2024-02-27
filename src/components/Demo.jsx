@@ -37,8 +37,6 @@ const Demo = () => {
       setAllArticles(updatedAllArticles);
 
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
-
-      console.log(newArticle);
     }
   };
 
@@ -104,7 +102,7 @@ const Demo = () => {
       {/* Summaries of the Articles */}
       <div className="my10 max-w-full flex justify-center">
         {isFetching ? (
-          <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
+          <img src={loader} alt="loader" className="w-25 h-25 object-contain" />
         ) : error ? (
           <p className="font-inter font-bold text-center text-black">
             Well, that was not supposed to happen...
