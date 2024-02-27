@@ -1,20 +1,40 @@
-import Hero from "./components/Hero";
-import Demo from "./components/Demo";
+import { Summarizer } from "./features";
+import { Navbar, Brand, CTA } from "./components";
+import { Header, Hero, Footer, Features, WhatGPT4, Blog } from "./containers";
+// import {
+//   Possibility,
+//   Analysis,
+//   Creator,
+// } from "./containers";
 
 import "./App.css";
 
 const App = () => {
   return (
-    <main>
-      <div className="main">
-        <div className="gradient" />
+    <div className="App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
       </div>
+      <Brand />
+      <WhatGPT4 />
+      <Features />
+      <main>
+        <div className="main">
+          <div className="gradient" />
+        </div>
+        <div className="gradient__bg">
+          <div className="ai__summarizer">
+            <Hero />
+            <Summarizer />
+          </div>
+        </div>
+      </main>
+      <CTA />
 
-      <div className="app">
-        <Hero />
-        <Demo />
-      </div>
-    </main>
+      <Blog />
+      <Footer />
+    </div>
   );
 };
 
