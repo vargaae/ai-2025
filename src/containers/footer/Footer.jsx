@@ -2,7 +2,7 @@ import logo from "../../assets/logo.svg";
 import "./footer.css";
 
 const Footer = () => (
-  <div className="ai__footer section__padding">
+  <div className="ai__footer section__padding" id="openai">
     <div className="ai__footer-heading">
       <h1 className="gradient__text">
         Do you want to step in to the future before others
@@ -10,7 +10,7 @@ const Footer = () => (
     </div>
 
     <div className="ai__footer-btn">
-      <p>Request Early Access</p>
+      <a href="https://openai.com/product" target="_blank">Request Access</a>
     </div>
 
     <div className="ai__footer-links">

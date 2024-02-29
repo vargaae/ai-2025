@@ -26,13 +26,13 @@ const Navbar = () => {
             <a href="#summarizer">GPT4 Summarizer</a>
           </p>
           <p>
-            <a href="#possibility">Open AI</a>
-          </p>
-          <p>
             <a href="#features">Case Studies</a>
           </p>
           <p>
             <a href="#blog">Library</a>
+          </p>
+          <p>
+            <a href="#openai">Open AI</a>
           </p>
         </div>
       </div>
@@ -69,15 +69,14 @@ const Navbar = () => {
               <p>
                 <a href="#summarizer">GPT4 Summarizer</a>
               </p>
-
-              <p>
-                <a href="#possibility">Open AI</a>
-              </p>
               <p>
                 <a href="#features">Case Studies</a>
               </p>
               <p>
                 <a href="#blog">Library</a>
+              </p>
+              <p>
+                <a href="#openai">Open AI</a>
               </p>
             </div>
             <div className="ai__navbar-menu_container-links-sign">

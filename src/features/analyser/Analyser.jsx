@@ -92,7 +92,6 @@ class Analysis extends Component {
 
   // !now this function work: onImageSubmit -> save to new file?!
   onImageSubmit = (imageUrl) => {
-    console.log("hi");
     // eslint-disable-next-line no-restricted-globals
     this.setState({ input: event.target.value });
     this.setState({ imageUrl: this.state.input });
@@ -105,13 +104,11 @@ class Analysis extends Component {
     )
       .then((response) => response.json())
       .then((response) => {
-        console.log("hi", response);
         this.setState(
           () => {
             return { predictions: response.outputs[0].data.concepts };
           },
           () => {
-            console.log(this.state);
           }
         );
       })
@@ -119,10 +116,8 @@ class Analysis extends Component {
   };
 
   onClickThumb = (img) => {
-    console.log("click to the thumb", this.state);
     this.setState({ input: img });
     this.setState({ imageUrl: img });
-    console.log("STATEChange", this.state);
   };
 
   onRouteChange = (route) => {
