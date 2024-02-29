@@ -4,29 +4,31 @@
 <br>
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
     <img src="https://img.shields.io/badge/-Redux-black?style=for-the-badge&logoColor=white&logo=redux&color=764ABC" alt="redux" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  # AI 2024 APPLICATION
+# AI 2024 APPLICATION
 
 Client Side of the Full Stack AI Analyser and Generator 2024 Application:
+
 - AI Text Analyser - ChatGPT
-- AI Detection Image Analyser - clarifai 2.9.1
+- AI Detection - Image Analyser - clarifai 2.9.1
 - AI Image Generator
 
-## 🛠 Front End: 
-- React 18.2 
+## 🛠 Front End:
+
+- React 18.2
 - REDUX
 - SASS
 - Tailwind CSS
-- react-parallax-tilt
 
 ## 🛠 Server Side Repository
+
 <a href="https://github.com/vargaae/image-detect-api" target="_blank"> NodeJS Application on the server side</a>
 
 ## AI Detection Image Analysis
+
 <p align="center">
 AI detection image analysis | AI visual inspection tool
 application with Clarifai API.
@@ -35,22 +37,23 @@ This application analyses the loaded image and makes predictions of concepts, th
 🚀<img alt="OpenAI logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ywmdBsy_LQo5vULnankQxbOiEfl_sT-CIEKCpUoizQ&s" width="150" />
 🚀<img alt="ClarifAI logo" src="https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png?width=120&name=clarifai-740x150.png" width="150" />
 🚀<img alt="Rapid API logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/RapidAPI_logo.svg/1200px-RapidAPI_logo.svg.png" width="150" />
-  
 
+## 🛠 AI IMAGE DETECTION IMAGE ANALYSIS Back End:
 
-## 🛠 AI IMAGE DETECTION IMAGE ANALYSIS Back End: 
 <p align="center">NodeJS express server with PostgreSQL Database
 🚀 The project is deployed to Render
 </p>
 
-## 🛠 Authentication and Authorization 
+## 🛠 Authentication and Authorization
+
 are set with email registration-log in system on the server side
 Email registration and login - working with SQL database
 
 ## AI IMAGE DETECTION IMAGE ANALYSIS Front End Application - Screenshots
- - Image Analysis
- - Sign In
- - Registration
+
+- Image Analysis
+- Sign In
+- Registration
 
 <div align="center">
   <img alt="Application image" src="https://vargaae.hu/images/projects/aiimagedetect.jpg" width="700" />
@@ -67,8 +70,7 @@ Currently, two official plugins are available:
 
 1. Clone this repo
 2. Run `npm install`
-3. Run `npm start`
-4. You must add your own API key in the `src/App.js` file to connect to Clarifai.
+3. You must add your own API key in the `src/App.js` file to connect to Clarifai, Rapid API, Open AI.
 
 You can grab Clarifai API key [here](https://www.clarifai.com/)
 **Set Up Environment Variables**
@@ -77,8 +79,11 @@ Create a new file named `.env` in the root of your project and add the following
 
 ```env
 VITE_RAPID_API_ARTICLE_KEY=
+VITE_CLARIFAI_API_KEY=
+VITE_OPENAI_API_KEY=
 ```
-**Running the Project**
+
+4.**Running the Project**
 
 ```bash
 npm run dev
