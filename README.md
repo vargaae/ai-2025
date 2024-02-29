@@ -2,7 +2,7 @@
   <img alt="Application image" src="https://cssh.northeastern.edu/informationethics/wp-content/uploads/sites/44/2020/07/ai@2x.png" width="400" />
 </div>
 <br>
-  <div>
+  <div align="center">
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Redux-black?style=for-the-badge&logoColor=white&logo=redux&color=764ABC" alt="redux" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
@@ -10,7 +10,7 @@
 
 # AI 2024 APPLICATION
 
-Client Side of the Full Stack AI Analyser and Generator 2024 Application:
+🚀Client Side of the Full Stack AI Analyser and Generator 2024 Application:
 
 - AI Text Analyser - ChatGPT
 - AI Detection - Image Analyser - clarifai 2.9.1
@@ -34,9 +34,9 @@ AI detection image analysis | AI visual inspection tool
 application with Clarifai API.
 This application analyses the loaded image and makes predictions of concepts, that we can use for example for keywords. I designed and developed the React application for this AI detection tool. It's connected to the server side through the Routes - REST API and through the encrypted auth services.
 </p>
-🚀<img alt="OpenAI logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ywmdBsy_LQo5vULnankQxbOiEfl_sT-CIEKCpUoizQ&s" width="150" />
-🚀<img alt="ClarifAI logo" src="https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png?width=120&name=clarifai-740x150.png" width="150" />
-🚀<img alt="Rapid API logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/RapidAPI_logo.svg/1200px-RapidAPI_logo.svg.png" width="150" />
+<img alt="OpenAI logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ywmdBsy_LQo5vULnankQxbOiEfl_sT-CIEKCpUoizQ&s" width="150" />
+<img alt="ClarifAI logo" src="https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png?width=120&name=clarifai-740x150.png" width="150" />
+<img alt="Rapid API logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/RapidAPI_logo.svg/1200px-RapidAPI_logo.svg.png" width="150" />
 
 ## 🛠 AI IMAGE DETECTION IMAGE ANALYSIS Back End:
 
@@ -49,7 +49,7 @@ This application analyses the loaded image and makes predictions of concepts, th
 are set with email registration-log in system on the server side
 Email registration and login - working with SQL database
 
-## AI IMAGE DETECTION IMAGE ANALYSIS Front End Application - Screenshots
+## AI IMAGE DETECTION - Screenshots
 
 - Image Analysis
 - Sign In
@@ -72,18 +72,21 @@ Currently, two official plugins are available:
 2. Run `npm install`
 3. You must add your own API key in the `src/App.js` file to connect to Clarifai, Rapid API, Open AI.
 
-You can grab Clarifai API key [here](https://www.clarifai.com/)
+You can grab ClarifAI API key [here](https://www.clarifai.com/)
+You can grab RapidAPI key [here](https://rapidapi.com/)
+You can grab OpenAI API key [here](https://openai.com/)
+
 **Set Up Environment Variables**
 
 Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
-VITE_RAPID_API_ARTICLE_KEY=
 VITE_CLARIFAI_API_KEY=
+VITE_RAPID_API_ARTICLE_KEY=
 VITE_OPENAI_API_KEY=
 ```
 
-4.**Running the Project**
+1. **Running the Project**
 
 ```bash
 npm run dev
