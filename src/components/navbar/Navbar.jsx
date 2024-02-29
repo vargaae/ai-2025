@@ -17,6 +17,9 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </p>
           <p>
+            <a href="#clarifai">Image Analyzer</a>
+          </p>
+          <p>
             <a href="#wgpt4">What is GPT4?</a>
           </p>
           <p>
@@ -56,6 +59,9 @@ const Navbar = () => {
             <div className="ai__navbar-menu_container-links">
               <p>
                 <a href="#home">Home</a>
+              </p>
+              <p>
+                <a href="#clarifai">Image Analyzer</a>
               </p>
               <p>
                 <a href="#wgpt4">What is GPT4?</a>
