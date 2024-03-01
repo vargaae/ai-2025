@@ -1,10 +1,6 @@
-import { Summarizer, Analyser } from "./features";
+import { Summarizer, Analyser, Creator } from "./features";
 import { Navbar, Brand, CTA } from "./components";
 import { Header, Hero, Footer, Features, WhatGPT4, Blog } from "./containers";
-// import {
-//   Possibility,
-//   Creator,
-// } from "./containers";
 
 import "./App.css";
 
@@ -31,8 +27,8 @@ const App = () => {
         </div>
       </main>
       <CTA />
-
       <Blog />
+      <Creator />
       <Footer />
     </div>
   );
