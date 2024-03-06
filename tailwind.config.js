@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
@@ -30,7 +29,7 @@ export default {
           5: "#3F3A52",
           6: "#252134",
           7: "#15131D",
-          8: "#0E0C15",
+          8: "#040C18",
           9: "#474060",
           10: "#43435C",
           11: "#1B1B2E",
@@ -41,12 +40,6 @@ export default {
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
         inter: ["Inter", "sans-serif"],
-        sans: ["var(--font-sora)", ...fontFamily.sans],
-        code: "var(--font-code)",
-        grotesk: "var(--font-grotesk)",
-      },
-      letterSpacing: {
-        tagline: ".15em",
       },
       spacing: {
         0.25: "0.0625rem",
@@ -83,31 +76,6 @@ export default {
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
       addComponents({
-        ".container": {
-          "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
-            {},
-        },
-        
-        ".body-1": {
-          "@apply text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8":
-            {},
-        },
-        ".body-2": {
-          "@apply font-light text-[0.875rem] leading-6 md:text-base": {},
-        },
-        ".caption": {
-          "@apply text-sm": {},
-        },
-        ".tagline": {
-          "@apply font-grotesk font-light text-xs tracking-tagline uppercase":
-            {},
-        },
-        ".quote": {
-          "@apply font-code text-lg leading-normal": {},
-        },
-        ".button": {
-          "@apply font-code text-xs font-bold uppercase tracking-wider": {},
-        },
       });
       addUtilities({
         ".tap-highlight-color": {

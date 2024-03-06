@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <header className="w-full flex justify-center items-center flex-col" id="summarizer">
+    <header className="w-full flex justify-center items-center flex-col">
       <h1 className="head_text">
         Summarize Articles with <br className="max-md:hidden" />
         <span className="blue_gradient ">OpenAI GPT-4</span>

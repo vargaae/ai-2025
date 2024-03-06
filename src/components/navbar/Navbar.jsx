@@ -34,13 +34,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  border-n-6 lg:backdrop-blur-sm ${
-        openNavigation ? "bg-n-8 border-b" : "backdrop-blur-sm"
+      className={`fixed top-0 left-0 w-full z-50  border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
+        openNavigation ? "bg-n-8 border-b" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
       <div className="ai__navbar-links flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#home">
-          <img src={logo} height={40} alt="logo" />
+          <img src={logo} height={45} width={45} alt="logo" />
         </a>
         <nav
           className={`${

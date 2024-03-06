@@ -1,9 +1,10 @@
 export const navigation = [
-  // {
-  //   id: "0",
-  //   title: "Home",
-  //   url: "#home",
-  // },
+  {
+    id: "0",
+    title: "Home",
+    url: "#home",
+    onlyMobile: true,
+  },
   {
     id: "1",
     title: "Image Analyzer",
@@ -19,11 +20,11 @@ export const navigation = [
     title: "GPT4 Summarizer",
     url: "#summarizer",
   },
-  {
-    id: "4",
-    title: "Case Studies",
-    url: "#features",
-  },
+  // {
+  //   id: "4",
+  //   title: "Case Studies",
+  //   url: "#features",
+  // },
   {
     id: "5",
     title: "Library",
@@ -34,16 +35,16 @@ export const navigation = [
     title: "Open AI",
     url: "#openai",
   },
-  {
-    id: "7",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "8",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+  // {
+  //   id: "7",
+  //   title: "New account",
+  //   url: "#signup",
+  //   onlyMobile: true,
+  // },
+  // {
+  //   id: "8",
+  //   title: "Sign in",
+  //   url: "#login",
+  //   onlyMobile: true,
+  // },
 ];

@@ -1,7 +1,4 @@
-// import "./analyser.scss";
-import "./analysis.scss";
-import "./image-link-form.css";
-import "./card.scss";
+import "./analyser.scss";
 
 import { Component } from "react";
 import { images } from "./data";
@@ -68,7 +65,7 @@ const initialState = {
   },
 };
 
-class Analysis extends Component {
+class Analyser extends Component {
   constructor() {
     super();
     this.state = initialState;
@@ -132,8 +129,8 @@ class Analysis extends Component {
     const { imageUrl, predictions } = this.state;
 
     return (
-      <div className="gpt3__features section__padding" id="clarifai">
-        <div className="gpt3__features-container">
+      <div className="ai__features section__padding">
+        <div className="ai__features-container">
           {images.map((img) => (
             <div
               className="thumb-container"
@@ -160,9 +157,9 @@ class Analysis extends Component {
           ))}
 
         </div>
-        <div className="gpt3__features-heading">
+        <div className="ai__features-heading">
           <h1 className="gradient__text">
-            The Future is Now. Let's use AI for analysing.
+            The Future is Now. Let&#39;s use AI for analysing.
           </h1>
           <img
             id="inputimage"
@@ -194,7 +191,7 @@ class Analysis extends Component {
     </div>
     </div>
 
-          <div className="gpt3__features-heading">
+          <div className="ai__features-heading">
           <div className="i center">
             <div className="details">
               <div className="console">Clarifai API</div>
@@ -237,6 +234,8 @@ class Analysis extends Component {
             <div className="image-concepts">
               <a href={imageUrl} target="blank"></a>
             </div>
+            <div id="wgpt4">
+            </div>
           </div>
         </div>
       </div>
@@ -244,4 +243,4 @@ class Analysis extends Component {
   }
 }
 
-export default Analysis;
+export default Analyser;
