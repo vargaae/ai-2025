@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 /* AI Image Analysis */
-
 /* AI Features -> Image Analysis */
-
 .ai__features {
   width: 100%;
   display: flex;
@@ -39,23 +36,6 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 990px) {
-  .ai__features {
-      flex-direction: column;
-  }
-
-  .ai__features-heading {
-      margin: 0 0 2rem 0;
-  }
-  .ai__features-container {
-      flex: 1.5;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: row;
-  }
-}
-
 /* Image Analysis predictions table */
 .ai-analysis__table {
   display: flex;
@@ -66,6 +46,11 @@
   align-items: center;
   padding: 8px;
   cursor: pointer;
+}
+
+/* For mobile phones: */
+.concepttbl menu {
+  width: 100%;
 }
 
 .ai-analysis__predictions-table {
@@ -128,10 +113,10 @@
 .details {
   flex: 1;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
   color: white;
   min-height: 550px;
-  width: 400px;
+  // min-width: 400px;
   overflow-x: auto;
 
   .console {
@@ -379,24 +364,15 @@ $thumbnail-overlay-font-size: 10px;
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
-  // .p {
-  //   width: 40%;
-  //   height: 20vh;
-  // }
+  .thumb-container {
+    width: 10vw; //!!! need to set Thumbnails width
+  }
 }
 
-@media screen and (max-width: 600px) { //!!! need to set Thumbnails width
-  .p {
-    // max-width: 80%;
-    // height: 30vh;
-  }
+@media screen and (max-width: 600px) {
+  //!!! need to set Thumbnails width
   .thumb-container {
     max-width: 3.5em; //!!! need to set Thumbnails width
-    // display: none;
-  }
-  .p-dev-tools {
-    // flex-direction: column;
-    // width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -413,12 +389,37 @@ $thumbnail-overlay-font-size: 10px;
       margin: 0px 0px 50px 0px;
       border-radius: 0;
       flex-direction: column;
-      width: 100%;
       overflow-x: hidden;
     }
 
-    .p-devtools .details #customers {
-      width: 87%;
+    .p-devtools .details {
+      width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .ai__features {
+    flex-direction: column;
+  }
+
+  .ai__features-heading {
+    margin: 0 0 2rem 0;
+  }
+  .ai__features-container {
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .i {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .details {
+    width: 350px;
   }
 }
