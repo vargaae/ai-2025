@@ -14,7 +14,7 @@
 
 - AI Text Analyser - ChatGPT
 - AI Detection - Image Analyser - clarifai 2.9.1
-- AI Image Generator
+- AI Image Generator - Dall-E
 
 ## 🛠 Front End:
 
@@ -22,7 +22,7 @@
 - REDUX
 - SASS
 - Tailwind CSS
-- 
+
 ## AI 2024 ClientSide Application - Screenshots
 
 <div align="center">
