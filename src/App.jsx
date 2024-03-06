@@ -33,7 +33,6 @@ const App = () => {
       </main>
       <CTA />
       <Blog />
-      <Creator />
       <Footer />
     </div>
   );
