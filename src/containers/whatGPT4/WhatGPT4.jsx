@@ -2,7 +2,7 @@ import Feature from "../../components/feature/Feature";
 import "./whatGPT4.css";
 
 const WhatGPT4 = () => (
-  <div className="ai__whatgpt4 section__margin" id="wgpt4">
+  <div className="ai__whatgpt4 section__margin">
     <div className="ai__whatgpt4-feature">
       <Feature
         title="What is GPT-4"
@@ -24,11 +24,12 @@ const WhatGPT4 = () => (
         title="Knowledgebase"
         text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
       />
-      <Feature
+      <Feature id="summarizer"
         title="Education"
         text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
       />
     </div>
+    <div id="summarizer"></div>
   </div>
 );
 

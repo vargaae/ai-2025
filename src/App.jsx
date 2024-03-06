@@ -1,9 +1,11 @@
+import ButtonGradient from "./assets/svg/ButtonGradient";
 import { Summarizer, Analyser } from "./features";
 import { Navbar, Brand, CTA } from "./components";
-import { Header, Hero, Footer, Features, WhatGPT4, Blog } from "./containers";
+import { Header, Hero, Footer, WhatGPT4, Blog } from "./containers";
 // import {
 //   Possibility,
 //   Creator,
+//   Features,
 // } from "./containers";
 
 import "./App.css";
@@ -15,10 +17,10 @@ const App = () => {
         <Navbar />
         <Header />
       </div>
+      <ButtonGradient />
       <Brand />
       <Analyser />
       <WhatGPT4 />
-      <Features />
       <main>
         <div className="main">
           <div className="gradient" />

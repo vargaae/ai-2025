@@ -1,5 +1,5 @@
-import { google, clarifai, atlassian, openai, shopify } from './imports';
-import './brand.css';
+import { google, clarifai, atlassian, openai, shopify } from "./imports";
+import "./brand.css";
 
 const Brand = () => (
   <div className="ai__brand section__padding">
@@ -18,6 +18,7 @@ const Brand = () => (
     <div>
       <img src={shopify} />
     </div>
+    <div id="clarifai"></div>
   </div>
 );
 
