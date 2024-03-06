@@ -8,7 +8,6 @@ import MenuSvg from "../../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./NavbarDesign";
 
 import { useState } from "react";
-// import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 
 const Navbar = () => {

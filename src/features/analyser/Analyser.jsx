@@ -88,7 +88,7 @@ class Analyser extends Component {
   };
 
   // !now this function work: onImageSubmit -> save to new file?!
-  onImageSubmit = (imageUrl) => {
+  onImageSubmit = () => {
     // eslint-disable-next-line no-restricted-globals
     this.setState({ input: event.target.value });
     this.setState({ imageUrl: this.state.input });

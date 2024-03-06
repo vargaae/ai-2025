@@ -17,6 +17,15 @@ const MenuSvg = ({ openNavigation }) => {
       />
       <rect
         className="transition-all origin-center"
+        y={openNavigation ? "5" : "5"}
+        width="20"
+        height="2"
+        rx="1"
+        fill="white"
+        transform={`rotate(${openNavigation ? "45" : "0"})`}
+      />
+      <rect
+        className="transition-all origin-center"
         y={openNavigation ? "5" : "10"}
         width="20"
         height="2"

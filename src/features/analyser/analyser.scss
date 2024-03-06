@@ -21,13 +21,6 @@
   margin-right: 5rem;
 }
 
-.ai__features-heading h1 {
-  font-size: 34px;
-  line-height: 45px;
-  font-weight: 800;
-  font-family: var(--font-family);
-}
-
 .ai__features-heading p {
   color: var(--color-subtext);
   font-size: 16px;
@@ -63,19 +56,10 @@
   }
 }
 
-
-@media screen and (max-width: 550px) {
-  .ai__features-heading h1 {
-      font-size: 28px;
-      line-height: 38px;
-  }
- 
-}
-
 /* Image Analysis predictions table */
 .ai-analysis__table {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   background: var(--gradient-bar);
   color: white;
   justify-content: space-between;
@@ -102,13 +86,13 @@
 }
 
 .ai-analysis__table__leftcolumn {
+  span {
+    color: #0ccac4;
+  }
 }
 
 .ai-analysis__table__rightcolumn {
   font-weight: bold;
-}
-span {
-  color: #0ccac4;
 }
 
 .ai-analysis__predictions-table-row:nth-child(even) {
@@ -160,13 +144,6 @@ span {
     font-weight: 300;
   }
 
-  h2,
-  h3 {
-    padding: 0px 10px 0px 40px;
-  }
-  p {
-    padding: 6px;
-  }
   .stack {
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -206,7 +183,6 @@ span {
     background-color: rgb(243, 242, 242);
     display: flex;
     align-items: center;
-    position: sticky;
     z-index: 2;
     color: black;
 
@@ -246,6 +222,7 @@ span {
 }
 
 /* CARD-THUMBNAILS */
+//!!! need to set Thumbnails width for smaller screenss
 
 $body-bg-color: #212121;
 $thumbnail-size: 80px;
@@ -301,7 +278,7 @@ $thumbnail-overlay-font-size: 10px;
 }
 
 .thumbnail__img {
-  flex: 4 0 auto;
+  // flex: 4 0 auto;
   background-position: center;
   background-size: cover;
   background-image: url(https://clarifai.com/cms-assets/20180320225539/general-009.jpg);
@@ -408,17 +385,18 @@ $thumbnail-overlay-font-size: 10px;
   // }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { //!!! need to set Thumbnails width
   .p {
-    max-width: 80%;
-    height: 30vh;
+    // max-width: 80%;
+    // height: 30vh;
   }
   .thumb-container {
-    display: none;
+    max-width: 3.5em; //!!! need to set Thumbnails width
+    // display: none;
   }
   .p-dev-tools {
-    flex-direction: column;
-    width: 100%;
+    // flex-direction: column;
+    // width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -441,35 +419,6 @@ $thumbnail-overlay-font-size: 10px;
 
     .p-devtools .details #customers {
       width: 87%;
-    }
-
-    h2 {
-      font-size: 1em;
-    }
-    #customers {
-      font-size: 0.8em;
-      text-align: left;
-    }
-
-    #customers td,
-    #customers th {
-      border: 0px solid #ddd;
-      padding: 2px;
-    }
-
-    #customers tr {
-      padding: 2px;
-      width: 50vw;
-    }
-
-    #customers th {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    #customers th:nth-child(2),
-    #customers td:nth-child(2) {
-      text-align: left;
     }
   }
 }
