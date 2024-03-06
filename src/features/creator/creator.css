@@ -1,0 +1,224 @@
+/* AI IMAGE GENERATOR */
+
+.ai__imagegenerator {
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+}
+
+.ai__imagegenerator-heading {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-align: left;
+    margin-right: 5rem;
+}
+
+.ai__imagegenerator-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+}
+
+.ai__imagegenerator-heading p {
+    color: var(--color-subtext);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-family);
+
+    margin-top: 2rem;
+}
+
+.ai__imagegenerator-container {
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ai__imagegenerator-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai__imagegenerator-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .ai__imagegenerator {
+        flex-direction: column;
+    }
+
+    .ai__imagegenerator-heading {
+        margin: 0 0 2rem 0;
+    }
+    .ai__imagegenerator-container {
+        flex: 1.5;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .ai__imagegenerator-heading h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+   
+}
+
+/* AI IMAGE GENERATOR LOADING !!!CLEANUP!!! */
+.ai__generator {
+    /* display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    gap: 30px; */
+  }
+  
+  .ai__generator-heading {
+    /* font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: white; */
+  }
+  
+  /* .ai__imagegenerator {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  } */
+    
+  .ai__generator-heading span {
+    color: pink;
+  }
+  
+  /* IMAGE */
+  
+  .ai__generator-img-loading {
+    flex: 1;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gpt3__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai__generator-img-loading img {
+    width: 100%;
+    height: 100%;
+    transition: 15s;
+}
+  
+  img {
+    border-radius: 15px;
+  }
+  
+  .ai__generator-loading-bar{
+    width: 0px;
+    height: 8px;
+    background: var(--gradient-text);
+  }
+  
+  .ai__generator-loading-bar-full{
+    width: 512px;
+    height: 8px;
+    background: var(--gradient-text);
+    transition: 15s;
+  }
+  
+  .ai__generator-loading-text{
+    font-size: 18px;
+    color: #DE1B89;
+  }
+  
+  .ai__generator-display-none{
+    display: none;
+  }
+  s
+  /* INPUT */
+  
+  .ai__generator-img__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .ai__generator-img__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+  
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .ai__generator-img__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #ff4820;
+    border: 2px solid #ff4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+  
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .ai__generator-img__input input,
+    .ai__generator-img__input button {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 490px) {
+    .ai__generator-img__input input,
+    .ai__generator-img__input button {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  
