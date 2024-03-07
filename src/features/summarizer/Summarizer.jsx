@@ -1,3 +1,5 @@
+import "./summarizer.scss"
+
 import { useState, useEffect } from "react";
 
 import { copy, linkIcon, loader, tick } from "../../assets";
