@@ -8,7 +8,7 @@ import { Header, Hero, Footer, WhatGPT4, Blog } from "./containers";
 //   Features,
 // } from "./containers";
 
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   return (

@@ -181,7 +181,7 @@ class Analyser extends Component {
       </p>
       <p> https://www.clarifai.com/hs-fs/hubfs/50_72.png?width=2880&height=1600&name=50_72.png</p>
       <div className="ai__header-content__input">
-      <button onClick={imageUrl === "/" ? null : this.onImageSubmit}>Analyse</button>
+      <button onClick={imageUrl === "/" ? null : this.onImageSubmit} className="action_btn">Analyse</button>
         <input
           type="text"
           onChange={this.onInputChange}

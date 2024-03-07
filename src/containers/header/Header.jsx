@@ -1,6 +1,6 @@
 import people from "../../assets/people.png";
 import ai from "../../assets/ai.png";
-import "./header.css";
+import "./header.scss";
 
 const Header = () => (
   <div className="ai__header section__padding" id="home">
@@ -15,7 +15,7 @@ const Header = () => (
       <div className="ai__header-content__input">
         <input type="text" placeholder="Analyse an image, and check out the predictions" />
         <a href="#clarifai">
-          <button type="button">Get Started</button>
+          <button type="button" className="action_btn">Get Started</button>
         </a>
       </div>
 
