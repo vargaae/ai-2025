@@ -1,0 +1,76 @@
+/* AI Analysis */
+/* AI Features -> Summarizer */
+.ai__summarizer__summary {
+  h2 {
+    margin-top: 0.5em;
+  }
+}
+
+.ai__summarizer__input {  /* App.scss -> Tailwind Styles */
+  // width: 100%;
+  // margin: 2rem 0 1rem;
+
+  // display: flex;
+  // flex-direction: row;
+
+   img {
+     margin: 9px;
+   }
+
+  input { // = .url_input
+    //   flex: 2;
+    //   width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    //   font-size: 20px;
+    //   line-height: 28px;
+    background: var(--color-footer);
+    //   border: 2px solid var(--color-footer);
+    //   padding: 0 1rem;
+    //   outline: none;
+    //   color: #fff;
+
+    //   border-top-left-radius: 5px;
+    //   border-bottom-left-radius: 5px;
+  }
+
+  button { // = .submit_btn
+    // flex: 0.1;
+    // width: 100%;
+    // min-height: 50px;
+    // font-family: var(--font-family);
+    // font-weight: 400;
+    // font-size: 20px;
+    // line-height: 28px;
+    background: #ff4820;
+    border: 2px solid #ff4820;
+    padding: 0 1rem;
+    color: #fff;
+    // cursor: pointer;
+    // outline: none;
+
+    // border-top-right-radius: 5px;
+    // border-bottom-right-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ai__summarizer__input {
+    input,
+    button {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .ai__summarizer__input {
+    input,
+    button {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}

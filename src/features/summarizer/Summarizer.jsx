@@ -49,7 +49,7 @@ const Summarizer = () => {
   return (
     <section className="mt-16 w-full max-w-xl">
       {/* Search */}
-      <div className="flex flex-col w-full gap-2">
+      <div className="ai__summarizer__input flex flex-col w-full gap-2">
         <form
           className="relative flex justify-center items-center"
           onSubmit={handleSubmit}
@@ -113,8 +113,8 @@ const Summarizer = () => {
           </p>
         ) : (
           article.summary && (
-            <div className="flex flex-col gap-3">
-              <h2 className="font-satoshi text-gray-600 font-bold text-xl">
+            <div className="ai__summarizer__summary flex flex-col gap-3">
+              <h2 className="font-satoshi text-gray-400 font-bold text-xl">
                 Summarized Article <span className="blue_gradient"></span>
               </h2>
               <div className="summary_box">
