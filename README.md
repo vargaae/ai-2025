@@ -8,9 +8,9 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-# AI 2024 APPLICATION
+# AI 2025 APPLICATION
 
-🚀Client Side of the Full Stack AI Analyser and Generator 2024 Application:
+🚀Client Side of the Full Stack AI Analyser and Generator 2025 Application:
 
 - AI Text Analyser - ChatGPT
 - AI Detection - Image Analyser - clarifai 2.9.1
@@ -23,7 +23,7 @@
 - SASS
 - Tailwind CSS
 - 
-## AI 2024 ClientSide Application - Screenshots
+## AI 2025 ClientSide Application - Screenshots
 
 <div align="center">
   <img alt="Application image" src="https://vargaae.hu/images/projects/ai-2024.png" width="700" />
