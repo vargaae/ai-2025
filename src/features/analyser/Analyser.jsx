@@ -3,50 +3,6 @@ import "./analyser.scss";
 import { Component } from "react";
 import { images } from "./data";
 
-const returnClarifaiRequestOptions = (imageUrl) => {
-  ///////////////////////////////////////////////////////////////////////////////////////////////////
-  // In this section, we set the user authentication, user and app ID, model details, and the URL
-  // of the image we want as an input. Change these strings to run your own example.
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-
-  // Your PAT (Personal Access Token) can be found in the portal under Authentification
-  const PAT = import.meta.env.VITE_CLARIFAI_API_KEY;
-  // Specify the correct user_id/app_id pairings
-  // Since you're making inferences outside your app's scope
-  const USER_ID = "vargaae";
-  const APP_ID = "test-application-1589318146";
-  // Change these to whatever model and image URL you want to use
-  const MODEL_ID = "general-image-recognition";
-  const IMAGE_URL = imageUrl; ////////////////////////////////////////////////////////////
-
-  const raw = JSON.stringify({
-    user_app_id: {
-      user_id: USER_ID,
-      app_id: APP_ID,
-    },
-    inputs: [
-      {
-        data: {
-          image: {
-            url: IMAGE_URL,
-          },
-        },
-      },
-    ],
-  });
-
-  const requestOptions = {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      Authorization: "Key " + PAT,
-    },
-    body: raw,
-  };
-
-  return requestOptions;
-};
-
 const initialState = {
   input: "",
   imageUrl: "/",
@@ -87,27 +43,34 @@ class Analyser extends Component {
     this.setState({ input: event.target.value });
   };
 
-  // !now this function work: onImageSubmit -> save to new file?!
+  // BACKEND CALL -> I put back to my server because of the CORS
   onImageSubmit = () => {
-    // eslint-disable-next-line no-restricted-globals
-    this.setState({ input: event.target.value });
     this.setState({ imageUrl: this.state.input });
-
-    fetch(
-      "https://api.clarifai.com/v2/models/" +
-        "general-image-recognition" +
-        "/outputs",
-      returnClarifaiRequestOptions(this.state.input)
-    )
+    fetch("https://ai-2025-api.vercel.app/imageurl", {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        input: this.state.input,
+      }),
+    })
       .then((response) => response.json())
       .then((response) => {
-        this.setState(
-          () => {
-            return { predictions: response.outputs[0].data.concepts };
-          },
-          () => {
-          }
-        );
+        if (response) {
+          fetch("https://ai-2025-api.vercel.app/image", {
+            method: "put",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              id: this.state.user.id,
+            }),
+          })
+            .then((response) => response.json())
+            .then((count) => {
+              this.setState(Object.assign(this.state.user, { entries: count }));
+            })
+            .catch((err) => console.log);
+        }
+        this.displayConcepts(this.displayPredictions(response));
+        // this.displayFaceBox(this.calculateFaceLocation(response));
       })
       .catch((err) => console.log(err));
   };
