@@ -94,7 +94,7 @@ class Analyser extends Component {
     this.setState({ imageUrl: this.state.input });
 
     fetch(
-      "https://api.clarifai.com/v2/models/" +
+      "https://cors-anywhere.herokuapp.com/https://api.clarifai.com/v2/models/" +
         "general-image-recognition" +
         "/outputs",
       returnClarifaiRequestOptions(this.state.input)
