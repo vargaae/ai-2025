@@ -12,7 +12,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(false);
 
   const newsApiKey = import.meta.env.VITE_NEWS_API_KEY;
-  const newsQuery = "chatgpt";
+  // const newsQuery = "chatgpt";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +25,7 @@ const Blog = () => {
         }
 
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?apiKey=${newsApiKey}&q=${newsQuery}&pageSize=5`,
+          `https://newsapi.org/v2/everything?apiKey=${newsApiKey}&q=chatgpt&pageSize=5`,
           {
             headers: {
               // 'Access-Control-Allow-Origin': true,
@@ -36,7 +36,7 @@ const Blog = () => {
       } catch (error) {
         console.error(
           "Error fetching data from 'https://newsapi.org/v2/':",
-          error
+          error.message
         );
       }  finally {
         setLoading(false);
@@ -65,7 +65,7 @@ const Blog = () => {
           />
         </div>
         <div className="ai__blog-container_groupB">
-          {loading ? <div><img src={loader} alt="loader" className="w-25 h-25 object-contain" />Loading...</div> : newsData &&
+          {newsData &&
             newsData.map((news) =>
               news.title ? (
                 <News
