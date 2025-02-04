@@ -19,8 +19,8 @@ export const images = [
     },
     {
       id: 4,
-      img: "https://i.pinimg.com/736x/e4/32/55/e432550fb154f42f8c64faeaa786ff97.jpg",
-      link: "https://i.pinimg.com/736x/e4/32/55/e432550fb154f42f8c64faeaa786ff97.jpg",
+      img: "https://images.pexels.com/photos/8294614/pexels-photo-8294614.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      link: "https://images.pexels.com/photos/8294614/pexels-photo-8294614.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       title: "Demo image 4",
     },
     {
@@ -37,8 +37,8 @@ export const images = [
     },
     {
       id: 7,
-      img: "https://goood-petfood_en_sb.cstatic.io/0x0/f/85262/2880x1600/96bf63d267/philosophie_desktop2880x1600pxneu.jpg",
-      link: "https://goood-petfood_en_sb.cstatic.io/0x0/f/85262/2880x1600/96bf63d267/philosophie_desktop2880x1600pxneu.jpg",
+      img: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?cs=srgb&dl=pexels-thisisengineering-3861969.jpg&fm=jpg",
+      link: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?cs=srgb&dl=pexels-thisisengineering-3861969.jpg&fm=jpg",
       title: "Demo image 7",
     }
   ];

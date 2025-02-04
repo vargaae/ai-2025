@@ -38,7 +38,7 @@ const Blog = () => {
           "Error fetching data from 'https://newsapi.org/v2/':",
           error.message
         );
-      }  finally {
+      } finally {
         setLoading(false);
       }
     };
@@ -65,7 +65,17 @@ const Blog = () => {
           />
         </div>
         <div className="ai__blog-container_groupB">
-          {newsData &&
+          {loading ? (
+            <div>
+              <img
+                src={loader}
+                alt="loader"
+                className="w-25 h-25 object-contain"
+              />
+              Loading...
+            </div>
+          ) : (
+            newsData &&
             newsData.map((news) =>
               news.title ? (
                 <News
@@ -77,11 +87,6 @@ const Blog = () => {
                 />
               ) : (
                 <>
-                  <Article
-                    imgUrl={blog01}
-                    date="Sep 26, 2023"
-                    text="GPT-4 and Open  AI is the future. Let us exlore how it is?"
-                  />
                   <Article
                     imgUrl={blog02}
                     date="Sep 26, 2023"
@@ -104,7 +109,8 @@ const Blog = () => {
                   />
                 </>
               )
-            )}
+            )
+          )}
         </div>
       </div>
     </div>
