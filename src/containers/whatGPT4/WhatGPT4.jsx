@@ -6,7 +6,7 @@ const WhatGPT4 = () => (
     <div className="ai__whatgpt4-feature">
       <Feature
         title="What is GPT-4"
-        text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by."
+        text="GPT-4 is a powerful AI language model that understands and generates human-like text, assisting with content creation, problem-solving, and more."
       />
     </div>
     <div className="ai__whatgpt4-heading">
@@ -18,15 +18,15 @@ const WhatGPT4 = () => (
     <div className="ai__whatgpt4-container">
       <Feature
         title="Chatbots"
-        text="We so opinion friends me message as delight. Whole front do of plate heard oh ought."
+        text="Enhance customer support and engagement with AI-driven chatbots that provide instant, intelligent responses 24/7."
       />
       <Feature
         title="Knowledgebase"
-        text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
+        text="Organize and access information efficiently with an AI-powered knowledgebase, making it easier to find answers and streamline workflows."
       />
       <Feature id="summarizer"
         title="Education"
-        text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
+        text="Transform learning with AI—personalized tutoring, content generation, and enhanced student engagement for a smarter education system."
       />
     </div>
     <div id="summarizer"></div>
