@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "./article.css";
+import "./news.css";
 
-const Article = ({ imgUrl, date, text, articleUrl }) => (
+const News = (({ imgUrl, date, text, articleUrl }) => (
   <Link to={articleUrl} target="_blank">
     <div className="ai__blog-container_article">
       <div className="ai__blog-container_article-image">
@@ -16,6 +16,6 @@ const Article = ({ imgUrl, date, text, articleUrl }) => (
       </div>
     </div>
   </Link>
-);
+));
 
-export default Article;
+export default News;
