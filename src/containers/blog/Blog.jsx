@@ -28,7 +28,7 @@ const Blog = () => {
           `https://newsapi.org/v2/everything?apiKey=${newsApiKey}&q=chatgpt&pageSize=5`,
           {
             headers: {
-              // 'Access-Control-Allow-Origin': true,
+              'Access-Control-Allow-Origin': true,
             },
           }
         );
@@ -65,7 +65,7 @@ const Blog = () => {
           />
         </div>
         <div className="ai__blog-container_groupB">
-          {loading ? (
+          {/* {loading ? (
             <div>
               <img
                 src={loader}
@@ -86,7 +86,7 @@ const Blog = () => {
                   articleUrl={news.url}
                 />
               ) : (
-                <>
+                <> */}
                   <Article
                     imgUrl={blog02}
                     date="Sep 26, 2023"
@@ -107,10 +107,10 @@ const Blog = () => {
                     date="Sep 26, 2023"
                     text="GPT-4 and Open  AI is the future. Let us exlore how it is?"
                   />
-                </>
+                {/* </>
               )
             )
-          )}
+          )} */}
         </div>
       </div>
     </div>
