@@ -39,7 +39,7 @@ const Blog = () => {
           "Error fetching data from 'https://newsapi.org/v2/':",
           error
         );
-        setError(error);
+        setError(error.data.error);
       } finally {
         setLoading(false);
       }
@@ -68,15 +68,14 @@ const Blog = () => {
         </div>
         <div className="ai__blog-container_groupB">
           {loading ? (
-            <div><img src={loader} alt="loader" className="w-25 h-25 object-contain" />Loading...</div>
-          ) : error ? (
-            <p className="font-inter font-bold text-center">
-            ...Error with getting News. Well, that was not supposed to happen...
-            <br />
-            <span className="font-satoshi text-gray-700 font-normal ">
-              {error?.data}
-            </span>
-          </p>
+            <div>
+              <img
+                src={loader}
+                alt="loader"
+                className="w-25 h-25 object-contain"
+              />
+              Loading...
+            </div>
           ) : (
             newsData &&
             newsData.map((news) =>
@@ -90,6 +89,14 @@ const Blog = () => {
                 />
               ) : (
                 <>
+                  <p className="font-inter font-bold text-center">
+                    ...Error with getting News. Well, that was not supposed to
+                    happen...
+                    <br />
+                    <span className="font-satoshi text-gray-700 font-normal ">
+                      {error?.data?.error}
+                    </span>
+                  </p>
                   <Article
                     imgUrl={blog01}
                     date="Sep 26, 2023"
