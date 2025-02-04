@@ -18,7 +18,7 @@ const Analyzer = () => {
     setAnalysisResult([]);
 
     try {
-      const response = await axios.post("https://your-fastapi-backend.onrender.com/analyze-image/", {
+      const response = await axios.post("https://imagedetect-fastapi-2025.onrender.com/clarifai/", {
         image_url: imageUrl
       });
 
