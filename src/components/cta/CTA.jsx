@@ -1,4 +1,4 @@
-import './cta.css';
+import "./cta.css";
 
 const CTA = () => (
   <div className="ai__cta">
@@ -7,7 +7,9 @@ const CTA = () => (
       <h3>Register Today & start exploring the endless possibilities.</h3>
     </div>
     <div className="ai__cta-btn">
-      <button type="button">Get Started</button>
+      <a href="#openai">
+        <button type="button">Get Started</button>
+      </a>
     </div>
   </div>
 );

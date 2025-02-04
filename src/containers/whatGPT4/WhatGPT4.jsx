@@ -13,7 +13,9 @@ const WhatGPT4 = () => (
       <h1 className="gradient__text">
         The possibilities are beyond your imagination
       </h1>
-      <p>Explore the Library</p>
+      <p>
+        <a href="#blog">Explore the Library</a>
+      </p>
     </div>
     <div className="ai__whatgpt4-container">
       <Feature
@@ -24,7 +26,8 @@ const WhatGPT4 = () => (
         title="Knowledgebase"
         text="Organize and access information efficiently with an AI-powered knowledgebase, making it easier to find answers and streamline workflows."
       />
-      <Feature id="summarizer"
+      <Feature
+        id="summarizer"
         title="Education"
         text="Transform learning with AI—personalized tutoring, content generation, and enhanced student engagement for a smarter education system."
       />

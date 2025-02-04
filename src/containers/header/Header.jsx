@@ -9,13 +9,26 @@ const Header = () => (
         Let&apos;s Create Something amazing using AI models
       </h1>
       <p>
-      Clarifai API is a powerful tool for general image recognition, offering a computer vision platform that enables developers to integrate image and video analysis into their applications. It utilizes deep learning algorithms to automatically tag, categorize, and understand the content of images. Developers can leverage Clarifai's pre-trained models for common objects, concepts, and scenes, or train custom models for specific recognition tasks. The API is versatile, making it suitable for a wide range of applications, from content moderation and visual search to building personalized user experiences.
+        Clarifai API is a powerful tool for general image recognition, offering
+        a computer vision platform that enables developers to integrate image
+        and video analysis into their applications. It utilizes deep learning
+        algorithms to automatically tag, categorize, and understand the content
+        of images. Developers can leverage Clarifai's pre-trained models for
+        common objects, concepts, and scenes, or train custom models for
+        specific recognition tasks. The API is versatile, making it suitable for
+        a wide range of applications, from content moderation and visual search
+        to building personalized user experiences.
       </p>
 
       <div className="ai__header-content__input">
-        <input type="text" placeholder="Analyse an image, and check out the predictions" />
+        <input
+          type="text"
+          placeholder="Analyse an image, and check out the predictions"
+        />
         <a href="#clarifai">
-          <button type="button" className="action_btn">Get Started</button>
+          <button type="button" className="action_btn">
+            Get Started
+          </button>
         </a>
       </div>
 

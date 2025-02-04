@@ -2,10 +2,6 @@ import ButtonGradient from "./assets/svg/ButtonGradient";
 import { Summarizer, Analyser, Creator } from "./features";
 import { Navbar, Brand, CTA } from "./components";
 import { Header, Hero, Footer, WhatGPT4, Blog } from "./containers";
-// import {
-//   Possibility,
-//   Features, 
-// } from "./containers";
 
 import "./App.scss";
 
