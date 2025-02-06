@@ -9,6 +9,7 @@ import { images } from "./data";
 const Analyser = () => {
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("/");
+  const [analysedImageUrl, setAnalysedImageUrl] = useState("/");
   const [predictions, setPredictions] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -24,7 +25,7 @@ const Analyser = () => {
     try {
       setLoading(true);
 
-      if (predictions) {
+      if (predictions & analysedImageUrl !== "/" & input === analysedImageUrl) {
         // Use cached data if available
         return;
       }
@@ -35,6 +36,7 @@ const Analyser = () => {
       if (response.data?.predictions) {
         const concepts = response.data.predictions || [];
         setPredictions(concepts);
+        setAnalysedImageUrl(input)
       }
     } catch (error) {
       console.error("Error fetching data from Clarifai API:", error.message);
