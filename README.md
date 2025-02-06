@@ -8,13 +8,13 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-# AI 2025 APPLICATION
+# AI Analyser 2025 APPLICATION
 
-🚀Client Side of the Full Stack AI Analyser and Generator 2025 Application:
+🚀Client Side of the Full Stack AI Analyser (and Generator) 2025 Application:
 
-- AI Text Analyser - ChatGPT
+- AI Text Analyser - ChatGPT - GPT 4 (through RapidAPI)
 - AI Detection - Image Analyser - clarifai 2.9.1
-- AI Image Generator - Dall-E
+- AI Image Generator - Dall-E (in the code, but hidden from live demo)
 
 ## 🛠 Front End:
 
@@ -28,10 +28,6 @@
 <div align="center">
   <img alt="Application image" src="https://vargaae.hu/images/projects/ai-2024.png" width="700" />
 </div>
-
-## 🛠 Server Side Repository
-
-<a href="https://github.com/vargaae/image-detect-api" target="_blank"> NodeJS Application on the server side</a>
 
 ## AI Detection Image Analysis
 
@@ -48,24 +44,11 @@ This application analyses the loaded image and makes predictions of concepts, th
 
 ## 🛠 AI IMAGE DETECTION IMAGE ANALYSIS Back End:
 
-<p align="center">NodeJS express server with PostgreSQL Database
-🚀 The project is deployed to Render
-</p>
+<p align="center">FastAPI server🚀 The project is deployed to Render, so it can be delayed temporarily...
 
-## 🛠 Authentication and Authorization
+## 🛠 Server Side Repository
 
-are set with email registration-log in system on the server side
-Email registration and login - working with SQL database
-
-## AI IMAGE DETECTION - Screenshots
-
-- Image Analysis
-- Sign In
-- Registration
-
-<div align="center">
-  <img alt="Application image" src="https://vargaae.hu/images/projects/aiimagedetect.jpg" width="700" />
-</div>
+(https://github.com/vargaae/imagedetect-fastapi-2025/)
 
 ## React + Vite
 
