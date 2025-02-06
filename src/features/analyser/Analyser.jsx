@@ -29,7 +29,7 @@ const Analyser = () => {
         return;
       }
 
-      const response = await axios.post(fastApi, "predict", {
+      const response = await axios.post(fastApi, {
         image_url: input,
       });
       if (response.data?.predictions) {
