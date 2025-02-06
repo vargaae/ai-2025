@@ -25,7 +25,11 @@ const Analyser = () => {
     try {
       setLoading(true);
 
-      if (predictions & analysedImageUrl !== "/" & input === analysedImageUrl) {
+      if (
+        predictions &
+        (analysedImageUrl !== "/") &
+        (input === analysedImageUrl)
+      ) {
         // Use cached data if available
         return;
       }
@@ -36,7 +40,7 @@ const Analyser = () => {
       if (response.data?.predictions) {
         const concepts = response.data.predictions || [];
         setPredictions(concepts);
-        setAnalysedImageUrl(input)
+        setAnalysedImageUrl(input);
       }
     } catch (error) {
       console.error("Error fetching data from Clarifai API:", error.message);
@@ -138,7 +142,7 @@ const Analyser = () => {
                     <div className="ai-analysis__predictions-table-row">
                       <div className="ai-analysis__table__leftcolumn">
                         <span>{">"} </span>
-                        Loading Predictions...
+                        Analysing Image...
                       </div>
                       <div className="ai-analysis__table__rightcolumn"></div>
                     </div>
