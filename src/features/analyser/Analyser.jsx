@@ -13,6 +13,8 @@ const Analyser = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const fastApi = import.meta.env.VITE_BACKEND_LINK;
+
   // 🔹 Képfeltöltés kezelése és API hívás
   const onImageSubmit = async () => {
     if (!input) return;
@@ -22,17 +24,14 @@ const Analyser = () => {
     try {
       setLoading(true);
 
-      // if (predictions) {
-      //   // Use cached data if available
-      //   return;
-      // }
+      if (predictions) {
+        // Use cached data if available
+        return;
+      }
 
-      const response = await axios.post(
-        "https://imagedetect-fastapi-2025.onrender.com/predict",
-        {
-          image_url: input, // FastAPI-nak megfelelő formátum
-        }
-      );
+      const response = await axios.post(fastApi, "predict", {
+        image_url: input,
+      });
       if (response.data?.predictions) {
         const concepts = response.data.predictions || [];
         setPredictions(concepts);
@@ -133,23 +132,20 @@ const Analyser = () => {
               </div>
               <div className="ai-analysis__predictions-table">
                 {loading ? (
-                   <>
-                   <div
-                   className="ai-analysis__predictions-table-row"
-                 >
-                   <div className="ai-analysis__table__leftcolumn">
-                   <span>{">"} </span>
-                    Loading Predictions...
-                   </div>
-                   <div className="ai-analysis__table__rightcolumn">
-                   </div>
-                  </div>
+                  <>
+                    <div className="ai-analysis__predictions-table-row">
+                      <div className="ai-analysis__table__leftcolumn">
+                        <span>{">"} </span>
+                        Loading Predictions...
+                      </div>
+                      <div className="ai-analysis__table__rightcolumn"></div>
+                    </div>
                     <img
-                    src={loader}
-                    alt="loader"
-                    className="w-25 h-25 object-contain"
+                      src={loader}
+                      alt="loader"
+                      className="w-25 h-25 object-contain"
                     />
-                    </>
+                  </>
                 ) : predictions && predictions?.length ? (
                   predictions
                     ?.filter((item) => item?.value > 0.91)
