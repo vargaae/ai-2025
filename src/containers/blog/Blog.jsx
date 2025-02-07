@@ -23,7 +23,7 @@ const Blog = () => {
         }
 
         const response = await axios.get(
-          `https://imagedetect-fastapi-2025.onrender.com/news/?query=${newsQuery}&pageSize=5`,
+          `https://imagedetect-fastapi-2025.onrender.com/news/?q=${newsQuery}`,
           {
             headers: {
               "Access-Control-Allow-Origin": true,
