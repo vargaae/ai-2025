@@ -3,12 +3,23 @@ import { blog01, blog02, blog03, blog04, blog05 } from "./imports";
 import "./blog.css";
 
 const Blog = () => {
+  const newsApiKey = import.meta.env.VITE_NEWS_API_KEY;
+
+  const getNewsData = async () => {
+    const response = await fetch(
+      `https://newsapi.org/v2/everything?apiKey=${newsApiKey}&q=chatgpt&pageSize=5`
+    );
+    const jsonData = await response.json();
+    console.log(jsonData);
+  };
+
   return (
     <div className="ai__blog section__padding" id="blog">
       <div className="ai__blog-heading">
         <h1 className="gradient__text">
           A lot is happening, <br /> What about GPT models?
         </h1>
+        <button onClick={getNewsData}>Search News</button>
       </div>
       <div className="ai__blog-container">
         <div className="ai__blog-container_groupA">
