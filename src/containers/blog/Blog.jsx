@@ -1,16 +1,22 @@
 import Article from "../../components/article/Article";
 import { blog01, blog02, blog03, blog04, blog05 } from "./imports";
 import "./blog.css";
+import { useState } from "react";
 
 const Blog = () => {
-  const newsApiKey = import.meta.env.VITE_NEWS_API_KEY;
+  const [cashedData, setCashedData] = useState(null);
+  const newsQuery = "chatgpt";
 
   const getNewsData = async () => {
     const response = await fetch(
-      `https://newsapi.org/v2/everything?apiKey=${newsApiKey}&q=chatgpt&pageSize=5`
-    );
+      `https://imagedetect-fastapi-2025.onrender.com/news/?query=${newsQuery}`
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("News API fetch failed:", error));
+
     const jsonData = await response.json();
-    console.log(jsonData);
+    setCashedData(jsonData);
   };
 
   return (
@@ -18,8 +24,8 @@ const Blog = () => {
       <div className="ai__blog-heading">
         <h1 className="gradient__text">
           A lot is happening, <br /> What about GPT models?
+          <button onClick={getNewsData}>Search News</button>
         </h1>
-        <button onClick={getNewsData}>Search News</button>
       </div>
       <div className="ai__blog-container">
         <div className="ai__blog-container_groupA">
