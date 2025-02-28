@@ -85,10 +85,10 @@ const Blog = () => {
               />
               Loading...
             </div>
-          ) : (
-            newsData &&
-            newsData?.slice(0, 4).map((news) =>
-              news.title ? (
+          ) : newsData ? (
+            newsData
+              ?.slice(0, 4)
+              .map((news) => (
                 <News
                   key={news.title}
                   imgUrl={news.urlToImage}
@@ -96,31 +96,30 @@ const Blog = () => {
                   text={news.title}
                   articleUrl={news.url}
                 />
-              ) : (
-                <>
-                  <Article
-                    imgUrl={blog02}
-                    date="Sep 26, 2023"
-                    text="GPT-4 and Open  AI is the future. Let us exlore how it is?"
-                  />
-                  <Article
-                    imgUrl={blog03}
-                    date="Sep 26, 2023"
-                    text="GPT-4 and Open  AI is the future. Let us exlore how it is?"
-                  />
-                  <Article
-                    imgUrl={blog04}
-                    date="Sep 26, 2023"
-                    text="GPT-4 and Open  AI is the future. Let us exlore how it is?"
-                  />
-                  <Article
-                    imgUrl={blog05}
-                    date="Sep 26, 2023"
-                    text="GPT-4 and Open  AI is the future. Let us exlore how it is?"
-                  />
-                </>
-              )
-            )
+              ))
+          ) : (
+            <>
+              <Article
+                imgUrl={blog02}
+                date="Sep 26, 2023"
+                text="GPT-4 and Open  AI is the future. Let us explore how it is?"
+              />
+              <Article
+                imgUrl={blog03}
+                date="Sep 26, 2023"
+                text="GPT-4 and Open  AI is the future. Let us explore how it is?"
+              />
+              <Article
+                imgUrl={blog04}
+                date="Sep 26, 2023"
+                text="GPT-4 and Open  AI is the future. Let us explore how it is?"
+              />
+              <Article
+                imgUrl={blog05}
+                date="Sep 26, 2023"
+                text="GPT-4 and Open  AI is the future. Let us explore how it is?"
+              />
+            </>
           )}
         </div>
       </div>
