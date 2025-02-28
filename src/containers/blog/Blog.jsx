@@ -87,7 +87,7 @@ const Blog = () => {
             </div>
           ) : (
             newsData &&
-            newsData.map((news) =>
+            newsData?.slice(0, 4).map((news) =>
               news.title ? (
                 <News
                   key={news.title}
