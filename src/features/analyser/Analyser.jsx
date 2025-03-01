@@ -14,7 +14,8 @@ const Analyser = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const fastApi = import.meta.env.VITE_BACKEND_LINK;
+  const aiApi = import.meta.env.VITE_AI_ANALYSER;
+
 
   // 🔹 Képfeltöltés kezelése és API hívás
   const onImageSubmit = async () => {
@@ -34,7 +35,7 @@ const Analyser = () => {
         return;
       }
 
-      const response = await axios.post(fastApi, {
+      const response = await axios.post(aiApi, {
         image_url: input,
       });
       if (response.data?.predictions) {

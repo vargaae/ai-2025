@@ -11,7 +11,9 @@ const Blog = () => {
   const [loading, setLoading] = useState(false);
 
   const newsQuery = "chatgpt";
+  const aiApi = import.meta.env.VITE_AI_NEWS;
 
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,7 +25,7 @@ const Blog = () => {
         }
 
         const response = await axios.get(
-          `https://imagedetect-fastapi-2025.onrender.com/news/?q=${newsQuery}`,
+          `${aiApi}/?q=${newsQuery}`,
           {
             headers: {
               "Access-Control-Allow-Origin": true,
@@ -50,7 +52,7 @@ const Blog = () => {
       return;
     }
     const response = await fetch(
-      `https://imagedetect-fastapi-2025.onrender.com/news/?query=${newsQuery}`
+      `${aiApi}/?query=${newsQuery}`
     )
       .then((response) => response.json())
       .then((data) => setCachedData(data))
