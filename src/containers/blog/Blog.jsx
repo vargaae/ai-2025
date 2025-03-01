@@ -72,7 +72,7 @@ const Blog = () => {
         <div className="ai__blog-container_groupA">
           <Article
             imgUrl={blog01}
-            date="Jan 27, 2025"
+            date="January 27, 2025 at 10:30 AM"
             text="New Open Source DeepSeek V3 Language Model Making Waves? GPT-4o and Open AI is the future? Let us explore how it is?"
             articleUrl="https://hackaday.com/2025/01/27/new-open-source-deepseek-v3-language-model-making-waves/"
           />
@@ -94,7 +94,7 @@ const Blog = () => {
                 <News
                   key={news.title}
                   imgUrl={news.urlToImage}
-                  date={news.publishedAt}
+                  isoDate={news.publishedAt}
                   text={news.title}
                   articleUrl={news.url}
                 />
@@ -103,22 +103,22 @@ const Blog = () => {
             <>
               <Article
                 imgUrl={blog02}
-                date="Sep 26, 2023"
+                date="January 27, 2025 at 10:30 AM"
                 text="GPT-4 and Open  AI is the future. Let us explore how it is?"
               />
               <Article
                 imgUrl={blog03}
-                date="Sep 26, 2023"
+                date="January 27, 2025 at 10:30 AM"
                 text="GPT-4 and Open  AI is the future. Let us explore how it is?"
               />
               <Article
                 imgUrl={blog04}
-                date="Sep 26, 2023"
+                date="January 27, 2025 at 10:30 AM"
                 text="GPT-4 and Open  AI is the future. Let us explore how it is?"
               />
               <Article
                 imgUrl={blog05}
-                date="Sep 26, 2023"
+                date="January 27, 2025 at 10:30 AM"
                 text="GPT-4 and Open  AI is the future. Let us explore how it is?"
               />
             </>
