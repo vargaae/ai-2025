@@ -14,15 +14,16 @@
 
 - AI Text Analyser - ChatGPT - GPT 4 (through RapidAPI)
 - AI Detection - Image Analyser - clarifai 2.9.1
+- AI News
 - AI Image Generator - Dall-E (in the code, but hidden from live demo)
 
 ## 🛠 Front End:
 
 - React 18.2
-- REDUX
+- REDUX Toolkit
 - SASS
 - Tailwind CSS
-- 
+- AWS-amplify
 ## AI 2025 ClientSide Application - Screenshots
 
 <div align="center">
@@ -44,11 +45,12 @@ This application analyses the loaded image and makes predictions of concepts, th
 
 ## 🛠 AI IMAGE DETECTION IMAGE ANALYSIS Back End:
 
-<p align="center">FastAPI server🚀 The project is deployed to Render, so it can be delayed temporarily...
+<p align="center">NodeJS express server 🚀 / FastAPI server🚀 
 
 ## 🛠 Server Side Repository
 
-(https://github.com/vargaae/imagedetect-fastapi-2025/)
+- Now it's connected: [NodeJS express server version](https://github.com/vargaae/ai-expressapi-2025)
+- [FastAPI server version](https://github.com/vargaae/imagedetect-fastapi-2025/)
 
 ## React + Vite
 
